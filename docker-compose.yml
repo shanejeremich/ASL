@@ -1,0 +1,48 @@
+services:
+  nodejs:
+    build:
+      context: ./nodejs
+    volumes:
+      - ./nodejs:/usr/src/app
+
+  python:
+    build:
+      context: ./python
+    volumes:
+      - ./python:/usr/src/app
+
+  php:
+    build:
+      context: ./php
+    volumes:
+      - ./php:/usr/src/app
+
+  ruby:
+    build:
+      context: ./ruby
+    volumes:
+      - ./ruby:/usr/src/app
+
+  cpp:
+    build:
+      context: ./cpp
+    command: ["./hello"]
+
+  rust:
+    build:
+      context: ./rust
+    command: ["./target/release/hello"]
+
+  java:
+    build:
+      context: ./java
+    command: ["java", "Hello"]
+
+  lua:
+    build:
+      context: ./lua
+    command: ["lua", "hello.lua"]
+
+  golang:
+    build:
+      context: ./golang
