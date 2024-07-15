@@ -46,3 +46,11 @@ services:
   golang:
     build:
       context: ./golang
+
+  week_two:
+    build: /week_two
+    ports:
+      - "3000:3000"
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules

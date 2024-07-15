@@ -1,0 +1,25 @@
+{
+  "name": "week_two",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [],
+  "author": "",
+  "dependencies": {
+    "@jworkman-fs/asl": "^1.2.43",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0",
+    "node-libcurl": "^4.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "nodemon": "^3.1.4"
+  },
+  "license": "ISC",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "test": "jest"
+  }
+}
